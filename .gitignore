@@ -1,0 +1,10 @@
+gocaml
+*.cmi
+*.cmo
+
+# local file
+memo.md
+test_main.ml
+unit_test.mk
+unit_test.ml
+test.sh

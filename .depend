@@ -1,0 +1,37 @@
+lexer.cmo : \
+    parser.cmi
+lexer.cmx : \
+    parser.cmx
+main.cmo : \
+    parser.cmi \
+    lexer.cmo
+main.cmx : \
+    parser.cmx \
+    lexer.cmx
+parser.cmo : \
+    utils.cmo \
+    type.cmo \
+    parser.cmi
+parser.cmx : \
+    utils.cmx \
+    type.cmx \
+    parser.cmi
+parser.cmi :
+test_main.cmo : \
+    parser.cmi \
+    lexer.cmo
+test_main.cmx : \
+    parser.cmx \
+    lexer.cmx
+type.cmo : \
+    utils.cmo
+type.cmx : \
+    utils.cmx
+unit_test.cmo : \
+    utils.cmo \
+    type.cmo
+unit_test.cmx : \
+    utils.cmx \
+    type.cmx
+utils.cmo :
+utils.cmx :
